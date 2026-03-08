@@ -21,7 +21,7 @@ pub const EDAD_MAX: u8 = 6;
 pub mod kinder {
     use super::*;
 
-    /// Crea el registro del kínder (PDA por owner).
+    /// Crea el registro del kínder 
     pub fn crear_kinder(ctx: Context<NuevoKinder>, nombre: String) -> Result<()> {
         require!(
             nombre.len() <= MAX_NOMBRE_KINDER,
@@ -117,7 +117,7 @@ pub mod kinder {
         Ok(())
     }
 
-    /// Listar (READ). En on-chain lo mostramos por logs; lectura real es off-chain (RPC).
+    /// Listar 
     pub fn listar_estudiantes(ctx: Context<VerKinder>) -> Result<()> {
         let k = &ctx.accounts.kinder;
         msg!("Kínder: {}", k.nombre);
@@ -174,10 +174,6 @@ pub struct EstudianteActualizacion {
 }
 
 // CONTEXTO
-
-
-
-
 #[derive(Accounts)]
 pub struct NuevoKinder<'info> {
     #[account(mut)]
