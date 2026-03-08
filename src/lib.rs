@@ -1,4 +1,7 @@
 //ELIZABETH ROJAS PEREZ
+//Es un sistema para dar de alta a niños a un Kinder, con metodos de CRUD como se mostro en clase. Espero cubrir con los puntos para obtener la certificación
+//Espero su retroalimentaciòn 
+
 use anchor_lang::prelude::*;
 declare_id!("FNjRAE4EVkijUZBBP1Svfm3nBp9JKjTrKq7CkLVu3WN");
 
